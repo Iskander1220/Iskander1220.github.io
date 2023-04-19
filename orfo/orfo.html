@@ -152,7 +152,7 @@
             </div>
             <div id="editor_container">
                 <div id="toolbar">
-                  <button id="apo-button">Апострофтæ сраст кæн </button>
+                  <!-- <button id="apo-button">Апострофтæ сраст кæн </button> -->
                   <button id="save-button">Сохранить в файл</button>
                   <button id="copy-button">Копировать</button>
                 </div>
@@ -192,12 +192,12 @@
         bounds: '#editor',
         placeholder: "..."
     });
-    
+    /*
     var apoButton = document.querySelector('#apo-button');
     apoButton.addEventListener('click', function() {
         spellCheck(true);
     });
-    
+    */
     var saveButton = document.querySelector('#save-button');
     saveButton.addEventListener('click', function() {
         download(quill.getText(), "text.txt", {type: "text/plain;charset=utf-8"});
