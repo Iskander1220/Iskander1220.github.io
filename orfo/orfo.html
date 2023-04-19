@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-        <title>Ирон растфыссынад бæлвырдгæнæн · Проверка осетинской орфографии</title>
+        <title>Ирон растфыссынад бæлвырдгæнæн · Проверка о орфографии</title>
         
         <meta charset="UTF-8">
         <meta name="http-equiv" content="Content-type: text/html; charset=UTF-8">
@@ -279,8 +279,14 @@
     function spellCheck(apo) {
         var range = quill.getSelection();
         var text = quill.getText()
-             .replace(new RegExp("Æ", "g"), "Ӕ")
-             .replace(new RegExp("æ", "g"), "ӕ")
+             //.replace(new RegExp("Æ", "g"), "Ӕ")
+             //.replace(new RegExp("æ", "g"), "ӕ")
+             
+             
+             .replace(/([Ӏ,@\.а-яёА-ЯЁ])[ΙIl1]/g, '$1Ӏ');
+             .replace(/[ΙIl1]([Ӏ,@\.а-яёА-ЯЁ])/g, 'Ӏ$1');
+             
+             
              .replace(/[\u00A0\u1680\u180e\u2000-\u2009\u200a\u200b\u202f\u205f\u3000]/g,' ')
         var lines = text.replace(/(?:\r)/g, '').split("\n");
         newContent = [];
