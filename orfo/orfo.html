@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-        <title>Ирон растфыссынад бæлвырдгæнæн · Проверка о орфографии</title>
+        <title>Проверка ингушской орфографии</title>
         
         <meta charset="UTF-8">
         <meta name="http-equiv" content="Content-type: text/html; charset=UTF-8">
@@ -59,6 +59,7 @@
                 box-sizing: border-box;
             }
             #container {
+                text-align: center;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
@@ -144,15 +145,14 @@
     <body>
         <div id="container">
             <div id="header">
-                <h1>Ирон растфыссынад бæлвырдгæнæн</h1>
-		<p style="color:gray">Дзырдуат ноггонд æрцыд 16.04.2023 | <a href="https://ironau.ru">ирон æвзаг</a> | <a href="https://t.me/fedogironau">ног хабæрттæ</a> | <a href="https://vk.com/barzafcag">ирон чингуытæ</a></p>
+                <div class="als-text-title"><h1>Проверка ингушской орфографии</h1></div>
+                <p style="color:gray">Последнее обновление: 19.04.2023</p>
                 <div id="hidden-div"><img src="img\loader.gif" style="width:26px;height:26px;" /></div>
             </div>
             <div id="editor_container">
                 <div id="toolbar">
-                  <button id="apo-button">Апострофтæ сраст кæн </button>
-                  <button id="save-button">Текст бафснай</button>
-                  <button id="copy-button">Къопи скæн</button>
+                  <button id="save-button">Сохранить в файл</button>
+                  <button id="copy-button">Копировать</button>
                 </div>
     
                 <div id="editor" spellcheck="false" autocomplete="false" ></div>
@@ -188,7 +188,7 @@
         },
         theme: 'snow', 
         bounds: '#editor',
-        placeholder: "Дæ текст"
+        placeholder: "..."
     });
     
     var apoButton = document.querySelector('#apo-button');
