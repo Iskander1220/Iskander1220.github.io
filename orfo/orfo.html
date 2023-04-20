@@ -119,6 +119,13 @@
                 color: black;
                 border: 1px solid rgba(0,0,0,0.1);
             }
+			
+			.suggestionLink2 a:hover, a:visited, a:link, a:active {
+                background-color: #FFF21E;
+                color: #000000;
+                text-decoration: none;
+            }
+			
             .suggestionLink a:hover, a:visited, a:link, a:active {
                 color: black;
                 text-decoration: none;
@@ -302,6 +309,7 @@
              .replace(/([а-яёА-ЯЁ])[ΙIl1]/g, '$1Ӏ')
              .replace(/[ΙIl1]([а-яёА-ЯЁ])/g, 'Ӏ$1')
              
+             .replace(/\.([а-яёА-ЯЁa-zA-Z])/g, '<a href="#" class="suggestionLink2">.$1</a>')
              
              .replace(/[\u00A0\u1680\u180e\u2000-\u2009\u200a\u200b\u202f\u205f\u3000]/g,' ')
         var lines = text.replace(/(?:\r)/g, '').split("\n");
