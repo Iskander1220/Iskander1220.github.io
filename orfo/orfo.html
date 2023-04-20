@@ -312,6 +312,18 @@
              .replace(/\.([а-яёА-ЯЁa-zA-Z])/g, '<b>.$1</b>')
              
              .replace(/[\u00A0\u1680\u180e\u2000-\u2009\u200a\u200b\u202f\u205f\u3000]/g,' ')
+
+
+
+
+
+        var textarea = quill.getText()
+             .replace(/\.([а-яёА-ЯЁa-zA-Z])/g, '<b>.$1</b>')
+
+
+
+
+
         var lines = text.replace(/(?:\r)/g, '').split("\n");
         newContent = [];
         lines.forEach(function(line, index) {
