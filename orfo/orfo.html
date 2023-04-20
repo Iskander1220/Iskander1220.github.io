@@ -110,7 +110,7 @@
                 position:absolute;
                 display: block;
                 z-index: 1000;
-				text-align:center !important;
+                text-align:center !important;
             }
             #apo-button,  #save-button, #copy-button {
                 width: auto;
@@ -128,10 +128,10 @@
             }
             h1 {
                 font-family: PT Sans, Helvetica, Arial, sans-serif;
-				font-size: 2.0em;
+                font-size: 2.0em;
             }
             ul.suggest {
-				min-width: 130px;
+                min-width: 90px;
                 position: absolute;
                 top: 16px;
                 left: 0;
@@ -300,7 +300,10 @@
              
              .replace(/([а-яёА-ЯЁ])[ΙIl1]/g, '$1Ӏ')
              .replace(/[ΙIl1]([а-яёА-ЯЁ])/g, 'Ӏ$1')
-             .replace(/[ΙIl1][ΙIl1]([ёуеыаоэяию])/g, 'ӀӀ$1')
+             .replace(/ΙΙ([ёуеыаоэяию])/g, 'ӀӀ$1')
+             .replace(/II([ёуеыаоэяию])/g, 'ӀӀ$1')
+             .replace(/ll([ёуеыаоэяию])/g, 'ӀӀ$1')
+             .replace(/11([ёуеыаоэяию])/g, 'ӀӀ$1')
              
              
              .replace(/[\u00A0\u1680\u180e\u2000-\u2009\u200a\u200b\u202f\u205f\u3000]/g,' ')
