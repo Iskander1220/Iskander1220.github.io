@@ -128,7 +128,7 @@
 				font-size: 2.0em;
             }
             ul.suggest {
-				min-width: 30px;
+				min-width: 130px;
                 position: absolute;
                 top: 16px;
                 left: 0;
@@ -365,7 +365,7 @@
         if (source == 'api') {
         } else if (source == 'user') {
             if(interval) clearTimeout(interval);
-            interval = setTimeout(spellCheck, 1000);
+            interval = setTimeout(spellCheck, 200);
         }
     });
     quill.focus();
