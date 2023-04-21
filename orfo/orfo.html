@@ -25,12 +25,14 @@
 
 
             .ql-snow .ql-editor a {
-                color: #000000 !important;
                 text-decoration: none !important;
+                color: #000000 !important;
+                background-color: #fdcccc;
                 background: url(img/misspell.gif) bottom left repeat-x;
                 background-size: 4px 3px;
                 height: 20em;
                 Xpadding: 0.1em 0.1em; padding: 2px 0.1em;
+                cursor: pointer;
             }
 
 
@@ -305,7 +307,7 @@
              //.replace(new RegExp("æ", "g"), "ӕ")
              
              
-             .replace(/[ΙIl1][ΙIl1]([ёуеыаоэяию])/g, 'ӀӀ$1')
+             .replace(/[ΙIl1][ΙIl1]([аеёоиуыэюя])/g, 'ӀӀ$1')
              .replace(/([а-яёА-ЯЁ])[ΙIl1]/g, '$1Ӏ')
              .replace(/[ΙIl1]([а-яёА-ЯЁ])/g, 'Ӏ$1')
              
