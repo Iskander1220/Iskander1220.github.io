@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>Проверка орфографии</title>
-        
         <meta charset="UTF-8">
         <meta name="http-equiv" content="Content-type: text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +21,110 @@
         <script type="module" src="index.js"></script> 
 
         <style type="text/css">
+
+
+
+
+
+.als-input-copy-button.show {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    visibility: visible;
+}
+.als-input-copy-button {
+    -webkit-transition: all .3s cubic-bezier(.55,.08,.06,.97);
+    transition: all .3s cubic-bezier(.55,.08,.06,.97);
+    cursor: pointer;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    width: 1.15em;
+    height: 1.15em;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tools-form {
+    font-size: 75%;
+}
+.action-buy-btn, .p-v3-en-boom-text .catalogus, .p-v3-pseudo-selector, .tools-form, .tools-stat .map-page .map-item .map-wrapper a span, .tools-stat .map-page .map-item .table, .tools-stat .stat-last-names .group .bars, .tools-stat .stat-last-names .group .years, .tools-stat .stat-profession .year-group .item table {
+    font-family: ALSArtemiusSans,Helvetica,sans-serif;
+}
+.als-text, .als-text-container, .announce__text {
+    font-size: 21px;
+    padding: 0 1em;
+}
+.als-text, .als-text-container, .announce__text, .artemius-serif {
+    font-family: ALSArtemiusSerif,Helvetica,sans-serif;
+}
+.als-body-wrap, .als-search-v4-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+}
+html.wf-active body {
+    font-family: ALSArtemiusSans,Helvetica,sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Helvetica,sans-serif;
+    overflow-y: scroll;
+    font-feature-settings: "kern" 1,"liga" 0;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+.als-input-copy-button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://img.artlebedev.ru/svalka/header-2016/v2/images/form-copy.png);
+    background-size: 100% 100%;
+    -webkit-transition: all .3s cubic-bezier(.55,.08,.06,.97);
+    transition: all .3s cubic-bezier(.55,.08,.06,.97);
+    opacity: .5;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             .ql-snow .ql-editor a {
@@ -163,7 +266,7 @@
                   <button id="copy-button">Копировать</button>
                 </div>
     
-                <div id="editor" spellcheck="false" autocomplete="false" ></div>
+                <div id="editor" spellcheck="false" autocomplete="false" ><span class="als-input-copy-button show"><i></i></span></div>
             </div>
         </div>
     
