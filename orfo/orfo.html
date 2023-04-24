@@ -57,6 +57,7 @@
                 }
             }
             html,body {
+                background-color: #F2F5FA !important;
                 margin: 0;
                 height: 100%;
             }
@@ -306,7 +307,21 @@
              //.replace(/\.([а-яёА-ЯЁa-zA-Z])/g, '<b>.$1</b>')
 
 
-             .replace(/([а-яёА-ЯЁ])\u00E1/g, '$1а́') //á = а́
+
+
+             .replace(/(((\s|^)á[а-яё])|([а-яё])á(\s|$|[а-яё]))/gi, function(m) {return m.replace('á', 'а');});
+             .replace(/(((\s|^)é[а-яё])|([а-яё])é(\s|$|[а-яё]))/gi, function(m) {return m.replace('é', 'е');});
+             .replace(/(((\s|^)ó[а-яё])|([а-яё])ó(\s|$|[а-яё]))/gi, function(m) {return m.replace('ó', 'о');});
+             .replace(/(((\s|^)ú[а-яё])|([а-яё])ú(\s|$|[а-яё]))/gi, function(m) {return m.replace('ú', 'и');});
+             .replace(/(((\s|^)ý[а-яё])|([а-яё])ý(\s|$|[а-яё]))/gi, function(m) {return m.replace('ý', 'у');});
+
+             .replace(/(((\s|^)á[a-z])|([a-z])á(\s|$|[a-z]))/gi, function(m) {return m.replace('á', 'a');});
+             .replace(/(((\s|^)é[a-z])|([a-z])é(\s|$|[a-z]))/gi, function(m) {return m.replace('é', 'e');});
+             .replace(/(((\s|^)ó[a-z])|([a-z])ó(\s|$|[a-z]))/gi, function(m) {return m.replace('ó', 'o');});
+             .replace(/(((\s|^)ú[a-z])|([a-z])ú(\s|$|[a-z]))/gi, function(m) {return m.replace('ú', 'u');});
+             .replace(/(((\s|^)ý[a-z])|([a-z])ý(\s|$|[a-z]))/gi, function(m) {return m.replace('ý', 'y');});
+
+
 
              
              .replace(/[\u00A0\u1680\u180e\u2000-\u2009\u200a\u200b\u202f\u205f\u3000]/g,' ')
