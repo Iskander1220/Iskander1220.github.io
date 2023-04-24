@@ -104,12 +104,97 @@ html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+.als-input-copy-button.checked i {
+    display: block;
+    position: relative;
+}
 *, :after, :before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
+i {
+    font-style: italic;
+}
+.als-input-copy-button.disabled {
+    cursor: default;
+}
+.als-input-copy-button.show {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    visibility: visible;
+}
+.als-input-copy-button.checked i:before {
+    top: 7px;
+    width: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation-name: checkLineL;
+    animation-name: checkLineL;
+    -webkit-animation-duration: .15s;
+    animation-duration: .15s;
+}
+.als-input-copy-button.checked i:after, .als-input-copy-button.checked i:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #5eab5e;
+    overflow: hidden;
+    -webkit-transform-origin: 0 2px;
+    -ms-transform-origin: 0 2px;
+    transform-origin: 0 2px;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.als-input-copy-button.checked i:after {
+    width: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 15px;
+    left: 6px;
+    -webkit-animation-name: checkLineR;
+    animation-name: checkLineR;
+    -webkit-animation-duration: .1s;
+    animation-duration: .1s;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+}
+.als-input-copy-button.checked i:after, .als-input-copy-button.checked i:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #5eab5e;
+    overflow: hidden;
+    -webkit-transform-origin: 0 2px;
+    -ms-transform-origin: 0 2px;
+    transform-origin: 0 2px;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 
 
