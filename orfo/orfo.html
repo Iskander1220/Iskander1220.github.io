@@ -114,8 +114,6 @@
                 color: #fff;
             }
             #hidden-div {
-                text-align: center !important;
-                float: center !important;
                 position:absolute;
                 display: block;
                 z-index: 1000;
@@ -128,10 +126,12 @@
                 border: 1px solid rgba(0,0,0,0.1);
             }		
             .suggestionLink a:hover, a:visited, a:link, a:active {
+pointer-events: all;
                 color: black;
                 text-decoration: none;
             }
             .suggestionLink:hover {
+pointer-events: all;
                 color: #F41224 !important; 
             }
             h1 {
