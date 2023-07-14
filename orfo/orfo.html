@@ -137,7 +137,6 @@
                 font-size: 2.0em;
             }
             ul.suggest {
-pointer-events: all;
                 min-width: 90px;
                 position: absolute;
                 top: 16px;
@@ -316,17 +315,17 @@ pointer-events: all;
 
 
 
-             .replace(/(((\s|^)á[а-яё])|([а-яё])á(\s|$|[а-яё]))/gi, function(m) {return m.replace('á', 'а́');})
-             .replace(/(((\s|^)é[а-яё])|([а-яё])é(\s|$|[а-яё]))/gi, function(m) {return m.replace('é', 'е́');})
-             .replace(/(((\s|^)ó[а-яё])|([а-яё])ó(\s|$|[а-яё]))/gi, function(m) {return m.replace('ó', 'о́');})
-             .replace(/(((\s|^)ú[а-яё])|([а-яё])ú(\s|$|[а-яё]))/gi, function(m) {return m.replace('ú', 'и́');})
-             .replace(/(((\s|^)ý[а-яё])|([а-яё])ý(\s|$|[а-яё]))/gi, function(m) {return m.replace('ý', 'у́');})
+             .replace(/(((\s|\b|[^\w]|^)á[а-яё])|([а-яё])á(\s|\b|[^\w]|$|[а-яё]))/gi, function(m) {return m.replace('á', 'а́');})
+             .replace(/(((\s|\b|[^\w]|^)é[а-яё])|([а-яё])é(\s|\b|[^\w]|$|[а-яё]))/gi, function(m) {return m.replace('é', 'е́');})
+             .replace(/(((\s|\b|[^\w]|^)ó[а-яё])|([а-яё])ó(\s|\b|[^\w]|$|[а-яё]))/gi, function(m) {return m.replace('ó', 'о́');})
+             .replace(/(((\s|\b|[^\w]|^)ú[а-яё])|([а-яё])ú(\s|\b|[^\w]|$|[а-яё]))/gi, function(m) {return m.replace('ú', 'и́');})
+             .replace(/(((\s|\b|[^\w]|^)ý[а-яё])|([а-яё])ý(\s|\b|[^\w]|$|[а-яё]))/gi, function(m) {return m.replace('ý', 'у́');})
 
-             .replace(/(((\s|^)á[a-z])|([a-z])á(\s|$|[a-z]))/gi, function(m) {return m.replace('á', 'á');})
-             .replace(/(((\s|^)é[a-z])|([a-z])é(\s|$|[a-z]))/gi, function(m) {return m.replace('é', 'é');})
-             .replace(/(((\s|^)ó[a-z])|([a-z])ó(\s|$|[a-z]))/gi, function(m) {return m.replace('ó', 'ó');})
-             .replace(/(((\s|^)ú[a-z])|([a-z])ú(\s|$|[a-z]))/gi, function(m) {return m.replace('ú', 'ú');})
-             .replace(/(((\s|^)ý[a-z])|([a-z])ý(\s|$|[a-z]))/gi, function(m) {return m.replace('ý', 'ý');})
+             .replace(/(((\s|\b|[^\w]|^)á[a-z])|([a-z])á(\s|\b|[^\w]|$|[a-z]))/gi, function(m) {return m.replace('á', 'á');})
+             .replace(/(((\s|\b|[^\w]|^)é[a-z])|([a-z])é(\s|\b|[^\w]|$|[a-z]))/gi, function(m) {return m.replace('é', 'é');})
+             .replace(/(((\s|\b|[^\w]|^)ó[a-z])|([a-z])ó(\s|\b|[^\w]|$|[a-z]))/gi, function(m) {return m.replace('ó', 'ó');})
+             .replace(/(((\s|\b|[^\w]|^)ú[a-z])|([a-z])ú(\s|\b|[^\w]|$|[a-z]))/gi, function(m) {return m.replace('ú', 'ú');})
+             .replace(/(((\s|\b|[^\w]|^)ý[a-z])|([a-z])ý(\s|\b|[^\w]|$|[a-z]))/gi, function(m) {return m.replace('ý', 'ý');})
 
 
 
