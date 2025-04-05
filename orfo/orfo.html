@@ -308,10 +308,12 @@
              .replace(/([а-яёА-ЯЁ])[ΙIl1]/g, '$1ӏ')
              .replace(/[ΙIl1]([а-яёА-ЯЁ])/g, 'Ӏ$1')
              
+             .replace(/([а-яёА-ЯЁ])[ΙIl1]/gi, '$1ӏ')
+
              //.replace(/\.([а-яёА-ЯЁa-zA-Z])/g, '<b>.$1</b>')
 
              //Ӏ в середине слов
-             .replace(/([а-яёА-ЯЁ])[ΙIl1]/gi, function(m) {return m.replace('Ӏ', 'ӏ');})
+             .replace(/(([а-яёА-ЯЁ])[ΙIl1])/g, function(m) {return m.replace('Ӏ', 'ӏ');})
 
 
 //римск цифры
