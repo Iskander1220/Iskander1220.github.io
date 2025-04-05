@@ -305,14 +305,15 @@
              
              
              .replace(/[ΙIl1][ΙIl1]([аеёоиуыэюя])/g, 'ӀӀ$1')
-             .replace(/([а-яёА-ЯЁ])[ΙIl1]/g, '$1Ӏ')
+             .replace(/([а-яёА-ЯЁ])[ΙIl1]/g, '$1ӏ')
              .replace(/[ΙIl1]([а-яёА-ЯЁ])/g, 'Ӏ$1')
              
              //.replace(/\.([а-яёА-ЯЁa-zA-Z])/g, '<b>.$1</b>')
 
 
 
-
+//римск цифры
+//(?:[IXCMVLD]+(?![ABEFGHJKNOPQRSTUWYZ]))
 
 
              .replace(/(((\s|\b|[^\w]|^)á[а-яё])|([а-яё])á(\s|\b|[^\w]|$|[а-яё]))/gi, function(m) {return m.replace('á', 'а́');})
